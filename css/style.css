@@ -35,7 +35,7 @@ flex-direction: column;
     color: white;
 }
 
-/* ------ SIDEBAR ------ */
+/* ------- SIDEBAR ------- */
 
 .sidebar {
 flex-shrink: 0;
@@ -146,15 +146,29 @@ hr {
     font-size: 0.9rem;
 }
 
-
-
-
-
-
+/* ---- PROPER APP ZONE ---- */
 
 .top-bar {
-flex-shrink: 0;
-padding: 1rem 0;
+    flex-shrink: 0;
+    justify-content: flex-end;
+    padding: 1rem 0;
+    background-color: #13141a;
+    margin-right: 0.3rem;
+    width: 100%;
+}
+
+.upgrade-btn {
+    border-radius: 25px;
+    border: 1px solid white;
+    padding: 0.6rem 2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.app-content {
+    background-color: #1e2128;
 }
 
 .player-container {
