@@ -1,0 +1,45 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.app-container {
+height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+.grow {
+flex-grow: 1;
+overflow: hidden;
+}
+
+.overflow-auto {
+overflow: auto;
+}
+
+.flex {
+display: flex;
+}
+
+.flex-column {
+flex-direction: column;
+}
+
+.player-container {
+flex-shrink: 0;
+padding: 1rem 0;
+}
+
+.sidebar {
+flex-shrink: 0;
+width: 250px;
+display: flex;
+flex-direction: column;
+}
+
+.top-bar {
+flex-shrink: 0;
+padding: 1rem 0;
+}
