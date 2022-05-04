@@ -51,6 +51,10 @@ body {
     overflow: auto;
 }
 
+.of-hid {
+    overflow: hidden;
+}
+
 .noshrink {
     flex-shrink: 0;
 }
@@ -159,7 +163,6 @@ ul > li {
     aspect-ratio: 1;
     width: 1.5rem;
     background-color: #808080;
-    overflow: hidden;
 }
 
 .account > svg {
@@ -202,3 +205,17 @@ PROPER APP ZONE
 .bottom-bar {
     padding: 1rem 0;
 }
+
+
+
+
+
+
+
+
+
+/******************************
+    RESPONSIVE
+*******************************/
+
+/* --- LARGE DESKTOP --- */
