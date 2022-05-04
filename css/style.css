@@ -9,7 +9,7 @@
     --top-bar-color: #13141a;
     --app-cont-color: #1e2128;
     --bottom-bar-color: #2e2e2e;
-    --text-color: #6e6e6e;
+    --text-color: #727272;
     --home-icon-color: #d2d2d2;
     --plus-button-color: #a3a3a3;
 }
@@ -46,6 +46,10 @@ body {
     flex-grow: 1;
 }
 
+.fb-0 {
+    flex-basis: 0;
+}
+
 .of-auto {
     overflow: auto;
 }
@@ -71,7 +75,7 @@ SIDEBAR
 */
 
 .sidebar {
-    width: 250px;
+    width: 215px;
     color: var(--text-color);
     background-color: black;
     padding-top: 1.3rem;
@@ -99,7 +103,7 @@ SIDEBAR
 .side-item {
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
-    line-height: 1rem;
+    font-size: 0.8rem;
     align-items: center;
 }
 
@@ -118,9 +122,13 @@ SIDEBAR
     margin-bottom: 0.7rem;
 }
 
+.crea-pl > span {
+    font-size: 0.75rem;
+}
+
 .fa-square-plus {
-    font-size: 2.8rem;
-    padding-right: 1rem;
+    font-size: 2.4rem;
+    padding-right: 0.6rem;
     color: var(--plus-button-color)
 }
 
@@ -133,8 +141,8 @@ ul > li {
     font-weight: 600;
 }
 
-.side-item, li {
-    font-size: 0.9rem;
+ul > li {
+    font-size: 0.7rem;
 }
 
 .install {
@@ -145,6 +153,16 @@ ul > li {
 
 .fa-circle-down {
     padding-right: 0.6rem;
+}
+
+.install > span {
+    font-size: 0.7rem;
+}
+
+.gray-rule {
+    width: 90%;
+    background-color: var(--text-color);
+    height: 1.5px;
 }
 
 .account {
@@ -171,8 +189,10 @@ ul > li {
     font-size: 0.9rem;
 }
 
+/* ---- PROPER APP ZONE ----*/
+
 /*
-PROPER APP ZONE
+TOP BAR
 */
 
 .top-bar {
@@ -187,7 +207,7 @@ PROPER APP ZONE
     border-radius: 25px;
     border: 1px solid white;
     padding: 0.6rem 2rem;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     font-weight: 600;
     color: white;
     cursor: pointer;
