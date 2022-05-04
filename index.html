@@ -14,13 +14,13 @@
 
 <body>
     <!-- 100 VH CONTAINER -->
-    <div class="app-container">
+    <div class="app-container flex-column">
         <!-- THIS CONTAINS EVERYTHING EXCEPT THE BOTTOM BAR - PLAYER | It has
         grow and align-items:stretch to force the items inside it to occupy
         all the avalaible space (except the bottom bar) -->
         <div class="grow flex">
             <!-- SIDEBAR | It needs shrink=0 and a static width -->
-            <div class="sidebar">
+            <div class="sidebar noshrink flex-column">
                 <!-- LOGO -->
                 <div class="logo-spot">
                     <img src="img/logo.svg" alt="">
@@ -43,18 +43,20 @@
                 <!-- PLAYLISTS - CREA PLAYLIST -->
                 <div class="playlist-zone grow">
                     <h4 class="white">PLAYLIST</h4>
-                    <div class="flex crea-playlist">
+                    <div class="flex crea-pl">
                         <i class="fa-solid fa-square-plus"></i> <span>Crea Playlist</span>
                     </div>
-                    <ul>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                    </ul>
+                    <div class="pl-list flex-column of-auto">
+                        <ul>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </div>                    
                 </div>
                 <!-- INSTALLA APP - JOHN DOE -->
                 <div class="side-bottom-zone noshrink">
@@ -71,7 +73,7 @@
             <!-- PROPER APP ZONE ON THE RIGHT -->
             <div class="grow flex flex-column">
                 <!-- TOP BAR - UPGRADE BUTTON -->
-                <div class="top-bar flex">
+                <div class="top-bar flex noshrink">
                     <div class="upgrade-btn">EFFETTUA L'UPGRADE</div>
                 </div>
                 <!-- VERTICALLY SCROLLABLE CONTENT -->
