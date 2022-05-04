@@ -4,7 +4,7 @@
 
 :root {
     /* Palette */
-    --green: #adff2f;
+    --green: #c8ff62;
     /* Commons */
     --top-bar-color: #13141a;
     --app-cont-color: #1e2128;
@@ -70,9 +70,7 @@ body {
     SITE SECTIONS
 *******************************/
 
-/*
-SIDEBAR
-*/
+/* ----- SIDEBAR -----*/
 
 .sidebar {
     width: 215px;
@@ -90,11 +88,18 @@ SIDEBAR
     padding-right: 1.5rem;
 }
 
+/*
+LOGO
+*/
 .logo-spot {
     width: 60%;
     padding-bottom: 1rem;
 }
 
+
+/*
+MENU
+*/
 .top-side-menu {
     padding-bottom: 1rem;
     width: 100%;
@@ -104,11 +109,16 @@ SIDEBAR
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     font-size: 0.8rem;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .side-item.white {
     border-left: 3px solid var(--green);
+}
+
+.side-item.white > svg {
+    position: relative;
+    right: 3px;
 }
 
 .side-item > svg {
@@ -144,8 +154,11 @@ ul > li {
 ul > li {
     font-size: 0.7rem;
 }
-
+/*
+INSTALL
+*/
 .install {
+    padding-top: 0.4rem;
     padding-bottom: 0.6rem;
     font-size: 0.85rem;
     align-items: center;
@@ -159,8 +172,11 @@ ul > li {
     font-size: 0.7rem;
 }
 
+/*
+ACCOUNT BOX
+*/
 .gray-rule {
-    width: 90%;
+    width: 100%;
     background-color: var(--text-color);
     height: 1.5px;
 }
@@ -189,17 +205,18 @@ ul > li {
     font-size: 0.9rem;
 }
 
-/* ---- PROPER APP ZONE ----*/
+/* ----- PROPER APP ZONE -----*/
 
-/*
-TOP BAR
-*/
+.app-zone {
+    background-color: var(--app-cont-color);
+}
+
+/* ----- TOP BAR -----*/
 
 .top-bar {
     justify-content: flex-end;
     padding: 1rem 0;
     background-color: var(--top-bar-color);
-    margin-right: 0.3rem;
     width: 100%;
 }
 
@@ -209,15 +226,25 @@ TOP BAR
     padding: 0.6rem 2rem;
     font-size: 0.65rem;
     font-weight: 600;
+    margin-right: 0.6rem;
     color: white;
     cursor: pointer;
 }
+
+/* ----- MUSIC SCROLLABLE BOX -----*/
 
 .app-content {
     background-color: var(--app-cont-color);
 }
 
+
+
+
+/* ----- BOTTOM BAR -----*/
+
 .bottom-bar {
+    background-color: var(--bottom-bar-color);
+    min-height: 80px;
     padding: 1rem 0;
 }
 
