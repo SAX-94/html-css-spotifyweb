@@ -19,7 +19,7 @@
         <!-- THIS CONTAINS EVERYTHING EXCEPT THE BOTTOM BAR - PLAYER | It has
         grow and align-items:stretch to force the items inside it to occupy
         all the avalaible space (except the bottom bar) -->
-        <div class="grow flex">
+        <div class="grow flex of-hid fb-0">
             <!-- SIDEBAR | It needs shrink=0 and a static width -->
             <div class="sidebar noshrink flex-column">
                 <!-- LOGO -->
@@ -100,13 +100,14 @@
                 </div>                
             </div>
             <!-- PROPER APP ZONE ON THE RIGHT -->
-            <div class="grow flex flex-column">
+            <div class="app-zone grow flex-column of-auto fb-0">
                 <!-- TOP BAR - UPGRADE BUTTON -->
                 <div class="top-bar flex noshrink">
                     <div class="upgrade-btn">EFFETTUA L'UPGRADE</div>
                 </div>
-                <!-- VERTICALLY SCROLLABLE CONTENT -->
-                <div class="app-content grow of-auto white">
+                <!-- VERTICALLY SCROLLABLE CONTENT | named like this even
+                though the scroll-bar is on his parent, an not on itself -->
+                <div class="app-content grow white">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt hic ea dolor inventore quas quasi obcaecati qui ut, mollitia ullam, enim, vel fuga exercitationem beatae
                 voluptatibus repellat rerum animi. Itaque.
                 Atque, praesentium. Amet beatae unde suscipit accusamus nulla aut explicabo saepe quia voluptates delectus tempore odit, exercitationem omnis tenetur? Explicabo recusandae
@@ -131,7 +132,9 @@
             </div>
         </div>
         <!-- PLAYER BAR - PLAYING SONG | it needs shrink:0 -->
-        <div class="bottom-bar noshrink fb-0"></div>
+        <div class="bottom-bar noshrink fb-0">
+            
+        </div>
     </div>
 </body>
 
