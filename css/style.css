@@ -219,6 +219,10 @@ INSTALL
     cursor: pointer;
 }
 
+.install > span:hover {
+    color: white;
+}
+
 /*
 ACCOUNT BOX
 */
