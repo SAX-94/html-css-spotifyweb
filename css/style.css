@@ -13,6 +13,8 @@
     --home-icon-color: #d2d2d2;
     --plus-button-color: #a3a3a3;
     --bottom-items-color: #888888;
+    --navbar-gray: #7f8085;
+    --subtitle-gray: #7e7f83;
 }
 
 /* -- RESET -- */
@@ -107,7 +109,7 @@ LOGO
 }
 
 /*
-MENU
+TOP-SIDE MENU
 */
 .top-side-menu {
     padding-bottom: 1rem;
@@ -287,7 +289,39 @@ ACCOUNT BOX
     background-color: var(--app-cont-color);
 }
 
+.nav-bar {
+    gap: 0.5rem;
+    justify-content: center;
+}
 
+.nav-item {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--navbar-gray);
+    padding: 0.7rem 0.7rem;
+}
+
+.green-line {
+    background-color: var(--green);
+    height: 2.5px;
+    width: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.45rem;
+    opacity: 0;
+}
+
+.nav-item:focus .green-line{
+    opacity: 1;
+}
+
+.nav-item:hover >span {
+    color: white;
+}
+
+.nav-item:hover .green-line {
+    opacity: 1;
+}
 
 
 /* ----- BOTTOM BAR -----*/
