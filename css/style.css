@@ -172,6 +172,10 @@ PLAYLISTS
     cursor: pointer;
 }
 
+.fa-square-plus:hover {
+    color: white;
+}
+
 ul {
     list-style: none;
 }
