@@ -12,6 +12,7 @@
     --text-color: #727272;
     --home-icon-color: #d2d2d2;
     --plus-button-color: #a3a3a3;
+    --bottom-items-color: #888888;
 }
 
 /* -- RESET -- */
@@ -85,6 +86,7 @@ body {
 
 .sidebar span {
     font-weight: 600;
+    cursor: pointer;
 }
 
 .logo-spot, .playlist-zone, .side-bottom-zone, .side-item {
@@ -99,7 +101,6 @@ LOGO
     width: 60%;
     padding-bottom: 1rem;
 }
-
 
 /*
 MENU
@@ -116,6 +117,10 @@ MENU
     align-items: flex-end;
 }
 
+.side-item>span:hover{
+    color: white;
+}
+
 .side-item.white {
     border-left: 3px solid var(--green);
 }
@@ -130,6 +135,18 @@ MENU
     padding-right: 0.5rem;
 }
 
+#home {
+    color: var(--home-icon-color);
+}
+
+#search {
+    color: var(--plus-button-color);
+}
+
+#library {
+    color: var(--plus-button-color);
+}
+
 /*
 PLAYLISTS
 */
@@ -140,6 +157,10 @@ PLAYLISTS
     margin-bottom: 0.7rem;
 }
 
+.crea-pl:hover {
+    color: white;
+}
+
 .crea-pl > span {
     font-size: 0.75rem;
 }
@@ -147,21 +168,28 @@ PLAYLISTS
 .fa-square-plus {
     font-size: 2.4rem;
     padding-right: 0.6rem;
-    color: var(--plus-button-color)
+    color: var(--plus-button-color);
+    cursor: pointer;
 }
 
 ul {
     list-style: none;
 }
 
-ul > li {
+.sidebar ul > li {
     line-height: 2rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
-ul > li {
+.sidebar ul > li {
     font-size: 0.7rem;
 }
+
+.sidebar ul > li:hover {
+    color: white;
+}
+
 /*
 INSTALL
 */
@@ -178,6 +206,7 @@ INSTALL
 
 .install > span {
     font-size: 0.7rem;
+    cursor: pointer;
 }
 
 /*
@@ -211,6 +240,7 @@ ACCOUNT BOX
     display: inline-block;
     padding-left: 0.6rem;
     font-size: 0.9rem;
+    cursor: text;
 }
 
 /* ----- PROPER APP ZONE -----*/
@@ -277,23 +307,35 @@ LEFT SECTION
     aspect-ratio: 1;
 }
 
-.song-play {
+.artist-play {
     font-size: 0.8rem;
     font-weight: 700;
 }
 
-.artist-play {
+.song-play {
     font-size: 0.6rem;
     font-weight: 700;
-    color: #888888;
+    color: var(--bottom-items-color);
+    cursor: pointer;
+}
+
+.song-play:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 .icons-space {
     gap: 0.5rem;
-    color: #888888;
 }
 
+.icon-cont {
+    color: var(--bottom-items-color);
+    
+}
 
+.icon-cont:hover {
+    color: white;
+}
 
 /*
 CENTRAL SECTION
@@ -307,8 +349,46 @@ RIGHT SECTION
 */
 .bottom-right {
     flex-basis: 215px;
+    padding-right: 0.7rem;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
+.bottom-right .icon-cont {
+    color: white;
+}
+
+.volume-bar {
+    background-color: var(--bottom-items-color);
+    border-radius: 7px;
+    height: 4px;
+}
+
+.volume-level {
+    width: 50%;
+    height: 6px;
+    border-radius: 7px;
+    background-color: #c2c2c2;
+    position: relative;
+}
+
+.slider {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    width: 7px;
+    position: absolute;
+    right: 0;
+    transition: 0.4s;
+}
+
+.volume-bar:hover .volume-level {
+    background-color: var(--green);
+}
+
+.volume-bar:hover .slider {
+    transform: scale(3);
+    background-color: white;
+}
 
 
 /******************************
