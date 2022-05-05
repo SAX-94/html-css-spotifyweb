@@ -355,15 +355,13 @@ CENTRAL SECTION
     gap: 0.5rem;
 }
 
-.icons.bar {
-    justify-content: center;
-    gap: 2rem;
+.icons-bar {
+    justify-content: center;        ;
 }
 
 .controls {
     font-size: 1.3rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .controls:hover {
