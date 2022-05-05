@@ -341,7 +341,7 @@ RECENTLY PLAYED
 .recent-plays > h3 {
     font-size: 1.3rem;
     padding-left: 0.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.2rem;
 }
 
 .col {
@@ -401,7 +401,16 @@ RECENTLY PLAYED
     padding-left: 0.5rem;
     color: var(--subtitle-gray);
     font-weight: 700;
+    padding-bottom: 1.4rem;
 }
+
+/*
+ARTISTI PIU' POPOLARI
+*/
+.round-img {
+    border-radius: 50%;
+}
+
 
 /* ----- BOTTOM BAR -----*/
 
