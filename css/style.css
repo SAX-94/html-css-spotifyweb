@@ -108,6 +108,10 @@ LOGO
     padding-bottom: 1rem;
 }
 
+.small-logo {
+    display: none;
+}
+
 /*
 TOP-SIDE MENU
 */
@@ -411,7 +415,6 @@ ARTISTI PIU' POPOLARI
     border-radius: 50%;
 }
 
-
 /* ----- BOTTOM BAR -----*/
 
 .bottom-bar {
@@ -420,7 +423,6 @@ ARTISTI PIU' POPOLARI
     padding: 0.7rem 0;
     align-items: center;
     justify-content: space-between;
-
 }
 
 /*
@@ -463,8 +465,7 @@ LEFT SECTION
 }
 
 .icon-cont {
-    color: var(--bottom-items-color);
-    
+    color: var(--bottom-items-color);    
 }
 
 .icon-cont:hover {
@@ -506,7 +507,8 @@ CENTRAL SECTION
 }
 
 .time-bar {
-    min-width: 350px;
+    min-width: 330px;
+    max-width: 450px;
 }
 
 .time-bar:hover .current-time {
@@ -594,4 +596,59 @@ RIGHT SECTION
 - 1100px */
 
 
-/* --- LARGE DESKTOP --- */
+/* --- DESKTOP --- */
+
+@media screen and (max-width: 1100px) {
+    .col {
+        flex-basis: calc(100% / 4);
+    }
+}
+
+
+
+@media screen and (max-width: 920px) {
+    .time-bar {
+        min-width: 250px;
+    }
+}
+
+/* TABLET */
+
+@media screen and (max-width: 700px) {
+    .col {
+        flex-basis: calc(100% / 2);
+    }
+    .icons-space {
+        flex-direction: column;
+        gap: 0.15rem;
+    }
+    .time-bar {
+        min-width: 180px;
+    }
+}
+
+/* MOBILE */
+@media screen and (min-width: 500px) and (max-width:699px ) {
+    .col {
+        flex-basis: calc(100% / 2);
+    }
+    .sidebar{
+        max-width: 60px;
+    }
+    .top-side-menu{
+        justify-content: flex-start;
+    }
+    .side-item > span {
+        display: none;
+    }
+    .sidebar ul {
+        display: none;
+    }
+    .logo-spot{
+        display: none;
+    }
+    .small-logo {
+        display: inline-block;
+        width: 1.5rem;
+    }
+}
