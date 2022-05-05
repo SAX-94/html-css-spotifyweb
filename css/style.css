@@ -339,7 +339,9 @@ RECENTLY PLAYED
 }
 
 .recent-plays > h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    padding-left: 0.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .col {
@@ -391,6 +393,13 @@ RECENTLY PLAYED
 }
 
 .artist-name, .song-title {
+    font-weight: 700;
+}
+
+.recent-plays > p {
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+    color: var(--subtitle-gray);
     font-weight: 700;
 }
 
@@ -552,7 +561,7 @@ RIGHT SECTION
     width: 7px;
     position: absolute;
     right: 0;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 .volume-bar:hover .volume-level {
