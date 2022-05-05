@@ -269,6 +269,10 @@ ACCOUNT BOX
     cursor: pointer;
 }
 
+.upgrade-btn:hover {
+    transform: scale(1.15);
+}
+
 /* ----- MUSIC SCROLLABLE BOX -----*/
 
 .app-content {
@@ -283,7 +287,7 @@ ACCOUNT BOX
 .bottom-bar {
     background-color: var(--bottom-bar-color);
     min-height: 80px;
-    padding: 1rem 0;
+    padding: 0.7rem 0;
     align-items: center;
     justify-content: space-between;
 
@@ -340,9 +344,68 @@ LEFT SECTION
 /*
 CENTRAL SECTION
 */
+.bottom-central {
+    max-width: 400px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
 
+.icons.bar {
+    justify-content: center;
+}
 
+.controls {
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
+.controls:hover {
+    transform: scale(1.2);
+}
+
+.fa-circle-play {
+    font-size: 2rem !important;
+}
+
+.time-control {
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 600;
+    gap: 1.7rem;
+}
+
+.time-bar {
+    min-width: 350px;
+}
+
+.time-bar:hover .current-time {
+    background-color: var(--green);
+}
+
+.time-bar:hover .slider {
+    transform: scale(2.5);
+    background-color: white;
+}
+
+.total-time {
+    background-color: var(--bottom-items-color);
+    border-radius: 7px;
+    height: 4px;
+}
+
+.current-time {
+    width: 25%;
+    height: 6px;
+    border-radius: 7px;
+    background-color: #c2c2c2;
+    position: relative;
+}
+
+.time-left, .time-right {
+    font-size: 0.8rem;
+}
 
 /*
 RIGHT SECTION
@@ -386,7 +449,7 @@ RIGHT SECTION
 }
 
 .volume-bar:hover .slider {
-    transform: scale(3);
+    transform: scale(2.5);
     background-color: white;
 }
 

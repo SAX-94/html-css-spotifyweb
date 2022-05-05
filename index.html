@@ -148,8 +148,30 @@
                 </div>
             </div>
             <!-- BOTTOM CENTRAL SECTION -->
-            <div class="bottom-central grow ai-center">
-
+            <div class="bottom-central flex-column grow ai-center">
+                <!-- I was forced to use padding to give the gap between the icons of the 
+                bar, because inline styling is the only way it works, and I don't know why.
+                I tried to do it with class, id, and !important too, but it doesn't work.
+                Inline styling is the only method that works, but i prefer avoiding it,
+                so i preferred using padding. -->
+                <div class="icons-bar flex grow ai-center">
+                    <div class="controls white"><i class="fa-solid fa-shuffle"></i></div>
+                    <div class="controls white"><i class="fa-solid fa-backward-step"></i></div>
+                    <div class="controls white"><i class="fa-regular fa-circle-play"></i></div>
+                    <div class="controls white"><i class="fa-solid fa-forward-step"></i></div>
+                    <div class="controls white"><i class="fa-solid fa-rotate-right"></i></div>
+                </div>
+                <div class="time-control flex grow ai-center">
+                    <div class="time-left noshrink white">0:25</div>
+                    <div class="time-bar flex grow ai-center">
+                        <div class="total-time flex grow ai-center">
+                            <div class="current-time">
+                                <div class="slider"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time-right noshrink white">4:35</div>
+                </div>
             </div>
             <!-- BOTTOM RIGHT SECTION -->
             <div class="bottom-right flex noshrink ai-center">
