@@ -357,6 +357,7 @@ CENTRAL SECTION
 
 .icons.bar {
     justify-content: center;
+    gap: 2rem;
 }
 
 .controls {
