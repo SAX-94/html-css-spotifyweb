@@ -338,6 +338,57 @@ RECENTLY PLAYED
     font-size: 1.2rem;
 }
 
+.col {
+    flex-basis: calc(100% / 6);
+}
+
+.song-card {
+    padding: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.img-cont {
+    position: relative;
+}
+
+.img-cont > img {
+    width: 100%;
+}
+
+.play-button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-button > .fa-circle-play {
+    font-size: 4rem;
+}
+
+.img-cont:hover .play-button {
+    display: block;
+}
+
+.img-cont:hover img {
+    filter: opacity(0.6);
+}
+
+.song-title {
+    padding-top: 0.9rem;
+    padding-bottom: 0.6rem;
+}
+
+.artist-name {
+    color: var(--subtitle-gray);
+    font-size: 0.7rem;
+}
+
+.artist-name, .song-title {
+    font-weight: 700;
+}
 
 /* ----- BOTTOM BAR -----*/
 
@@ -358,12 +409,12 @@ LEFT SECTION
     justify-content: space-between;
 }
 
-.small-img-cont {
+.img-cont-small {
     width: 65px;
     padding: 8px;
 }
 
-.small-img-cont > img {
+.img-cont-small > img {
     width: 100%;
     aspect-ratio: 1;
 }
@@ -421,7 +472,7 @@ CENTRAL SECTION
     transform: scale(1.2);
 }
 
-.fa-circle-play {
+.icons-bar .fa-circle-play {
     font-size: 2rem !important;
 }
 
