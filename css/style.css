@@ -612,11 +612,17 @@ RIGHT SECTION
     }
 }
 
-/* TABLET */
+/* --- TABLET --- */
 
 @media screen and (max-width: 700px) {
     .col {
         flex-basis: calc(100% / 2);
+    }
+    .bottom-left {
+        max-width: 160px;
+    }
+    .bottom-right {
+        max-width: 160px;
     }
     .icons-space {
         flex-direction: column;
@@ -627,8 +633,10 @@ RIGHT SECTION
     }
 }
 
-/* MOBILE */
-@media screen and (min-width: 500px) and (max-width:699px ) {
+
+/* --- MOBILE --- */
+
+@media screen and (max-width: 600px) {
     .col {
         flex-basis: calc(100% / 2);
     }
