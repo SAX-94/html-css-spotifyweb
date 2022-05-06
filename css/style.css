@@ -261,61 +261,6 @@ ACCOUNT BOX
     cursor: text;
 }
 
-/*
-HIDDEN SIDEBAR
-*/
-.hid-sidebar {
-    display: none;
-    width: 60px;
-    color: var(--text-color);
-    background-color: black;
-    padding-top: 0.1rem;
-    justify-content: space-between;
-}
-
-.hid-top-col {
-    padding-top: 1.8rem;
-}
-
-.sm-logo-cont {
-    width: 30px;
-}
-
-.sm-logo-cont > img {
-    width: 100%;
-    color: white;
-    background-color: #888888;
-}
-
-.sm-icon-cont {
-    width: 30px;
-}
-
-.sm-home > svg {
-    color: var(--home-icon-color);
-}
-
-.sm-search > svg {
-    color: var(--plus-button-color);
-}
-
-.sm-library > svg {
-    color: var(--plus-button-color);
-}
-
-.sm-inst-cont {
-    width: 20px;
-    color: #808080;
-}
-
-.sm-acc {
-    border-radius: 50%;
-    aspect-ratio: 1;
-    width: 30px;
-    background-color: #808080;
-}
-
-
 /* ----- PROPER APP ZONE -----*/
 
 .app-zone {
